@@ -144,7 +144,7 @@ public class day10_loops_conditions {
 //		obj.assig3();
 //		obj.assig4();
 //		obj.assig5();
-		obj.assig6();
+//		obj.assig6();
 //		obj.assig7();
 //		System.out.println(obj.assig8(12));
 	}
