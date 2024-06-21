@@ -28,9 +28,16 @@ public class FileHandling {
 		}
 	}
 	
+	public void writeDataSingleLine() throws IOException {
+		File f = new File("../RodrigoProject2/myfile.txt");
+		FileWriter fw = new FileWriter(f, true);
+		fw.write("Hi asshole");
+		fw.close();
+	}
+	
 	public void writeData() throws IOException {
 		File f = new File("../RodrigoProject2/myfile.txt");
-		FileWriter fw = new FileWriter(f);	// (f, true) to append data.
+		FileWriter fw = new FileWriter(f, true);	// (f, true) to append data.
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write("1st line....");
 		bw.newLine();
@@ -42,6 +49,7 @@ public class FileHandling {
 		FileHandling f = new FileHandling();
 //		f.readDatabyChar();
 //		f.readDatabyLine();
+//		f.writeDataSingleLine();
 		f.writeData();
 	}
 }
